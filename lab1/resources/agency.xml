@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<Agency>
+	<Category id="1" name="Food">
+		<News id="1" name="Apples" price="1.05" goods_type="fruits"/>
+		<News id="2" name="Bananas" price="1.20" goods_type="fruits"/>
+	</Category>
+	<Category id="2" name="Technic">
+		<News id="3" name="Iphone 13" price="1000" goods_type="smartphone"/>
+		<News id="4" name="PS 5" price="750" goods_type="game console"/>
+	</Category>
+</Agency>
