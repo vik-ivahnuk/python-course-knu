@@ -17,12 +17,12 @@
                <xsd:complexType>
                 <xsd:attribute name="id" type="xsd:int"/>
                 <xsd:attribute name="name" type="xsd:string"/>
-                <xsd:attribute name="price" type="xsd:string"/>
-                <xsd:attribute name="goods_type" type="xsd:string"/>
+                <xsd:attribute name="pages" type="xsd:int"/>
+                <xsd:attribute name="author" type="xsd:string"/>
                </xsd:complexType>
             </xsd:element>
         </xsd:sequence>
-        <xsd:attribute name="id" type="xsd:string"/>
+        <xsd:attribute name="id" type="xsd:int"/>
         <xsd:attribute name="name" type="xsd:string"/>
     </xsd:complexType>
 

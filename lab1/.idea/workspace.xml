@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a6c48907-e8c7-4a3b-b0eb-9b824118fbba" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/agency.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xmlvalidator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/lab1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/lab1.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AgencyManagement.py" beforeDir="false" afterPath="$PROJECT_DIR$/AgencyManagement.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AgencyXML.py" beforeDir="false" afterPath="$PROJECT_DIR$/AgencyXML.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/news/News.py" beforeDir="false" afterPath="$PROJECT_DIR$/news/News.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/news/NewsCategory.py" beforeDir="false" afterPath="$PROJECT_DIR$/news/NewsCategory.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/agency.xml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/agency.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/agency.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/resources/agency.xsd" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -124,7 +116,7 @@
       <workItem from="1649082910985" duration="122000" />
       <workItem from="1649083222394" duration="63000" />
       <workItem from="1649083677310" duration="5894000" />
-      <workItem from="1649149010158" duration="8555000" />
+      <workItem from="1649149010158" duration="11616000" />
     </task>
     <servers />
   </component>
@@ -143,7 +135,7 @@
     </option>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/lab1$main.coverage" NAME="main Coverage Results" MODIFIED="1649160657949" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/lab1$main.coverage" NAME="main Coverage Results" MODIFIED="1649163804951" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/lab1$validator.coverage" NAME="validator Coverage Results" MODIFIED="1649084289119" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
