@@ -1,11 +1,7 @@
-<?xml version="1.0" ?>
+<?xml version='1.0' encoding='UTF-8'?>
 <Agency>
-	<Category id="1" name="Sport">
-		<News id="1" name="last box fight" pages="1" author="mick gordon"/>
-		<News id="2" name="tennis" pages="8" author="elden lord"/>
-	</Category>
-	<Category id="2" name="Politic">
+	<Category id="1" name="sport">
 		<News id="3" name="financial" pages="7" author="tom jonhson"/>
-		<News id="4" name="" pages="50" author="jack mickelson"/>
+		<News id="4" name="fin" pages="50" author="jack mickelson"/>
 	</Category>
 </Agency>

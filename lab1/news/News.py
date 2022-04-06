@@ -1,9 +1,15 @@
 
 
 class News:
-    def __init__(self, _id: int, name: str, pages: int, author: str, id_category: int):
+    def __init__(self, _id: int, name: str, pages: int, author: str):
         self.id = _id
         self.name = name
         self.pages = pages
         self.author = author
-        self.category = id_category
+
+    def __repr__(self):
+        return "id: {0} name: {1} pages: {2} author: {3}".format(self.id, self.name, self.pages, self.author)
+
+
+
+
