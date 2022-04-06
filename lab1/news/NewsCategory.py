@@ -1,8 +1,8 @@
 from news.News import News
 
 class NewsCategory:
-    def __init__(self, id: int, name: str, news: [News]):
-        self.id = id
+    def __init__(self, _id: int, name: str, news: [News]):
+        self.id = _id
         self.name = name
         self.news = news
 
