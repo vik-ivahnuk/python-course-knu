@@ -8,7 +8,8 @@ class News:
         self.author = author
 
     def __repr__(self):
-        return "id: {0} name: {1} pages: {2} author: {3}".format(self.id, self.name, self.pages, self.author)
+        return "News - id: {0} name: {1} pages: {2} author: {3}".format(
+            self.id, self.name, self.pages, self.author)
 
 
 

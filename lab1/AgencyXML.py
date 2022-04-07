@@ -52,10 +52,12 @@ class AgencyXML:
                                 nw: Element = nw
                                 if nw.nodeType == nw.ELEMENT_NODE:
                                     news.append(
-                                        News(int(nw.getAttribute("id")),
+                                        News(
+                                             int(nw.getAttribute("id")),
                                              nw.getAttribute("name"),
                                              int(nw.getAttribute("pages")),
-                                             nw.getAttribute("author"))
+                                             nw.getAttribute("author")
+                                        )
                                     )
                             return news
         return []
@@ -94,17 +96,20 @@ class AgencyXML:
                             nw: Element = nw
                             if nw.nodeType == nw.ELEMENT_NODE:
                                 news.append(
-                                    News(int(nw.getAttribute("id")),
+                                    News(
+                                         int(nw.getAttribute("id")),
                                          nw.getAttribute("name"),
                                          int(nw.getAttribute("pages")),
-                                         nw.getAttribute("author"))
+                                         nw.getAttribute("author")
+                                    )
                                 )
                         result.append(
-                            NewsCategory(int(category.getAttribute("id")),
+                            NewsCategory(
+                                     int(category.getAttribute("id")),
                                      category.getAttribute("name"),
-                                     news)
+                                     news
                             )
-
+                        )
 
         return result
 
@@ -136,11 +141,3 @@ class AgencyXML:
                                 pretty_print=True, xml_declaration=True)
         with open(xml_path, "wb") as f:
             f.write(xml_content)
-
-
-
-
-
-
-
-

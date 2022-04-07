@@ -1,11 +1,4 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <Agency>
-	<Category id="1" name="sport">
-		<News id="3" name="financial" pages="7" author="tom jonhson"/>
-		<News id="4" name="fin" pages="50" author="jack mickelson"/>
-	</Category>
-	<Category id="4" name="financical">
-		<News id="6" name="financial" pages="7" author="tom jonhson"/>
-		<News id="4" name="fin" pages="50" author="jack mickelson"/>
-	</Category>
+	<Category id="1" name="sport"/>
 </Agency>
