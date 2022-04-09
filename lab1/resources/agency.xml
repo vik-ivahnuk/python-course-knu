@@ -1,4 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<Agency>
-	<Category id="1" name="sport"/>
+<Agency xmlns="http://vik-ivahnuk.com.lab1/agency">
+	<Category id="1" name="sport">
+		<News id="11" name="karate" pages="5" author="ivan stoltenberg"/>
+	</Category>
+	<Category id="2" name="politic">
+		<News id="12" name="kanzas meeting" pages="90" author="andrew"/>
+	</Category>
 </Agency>

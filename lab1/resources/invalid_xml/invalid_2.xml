@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE Agency SYSTEM "agency.dtd">
+<Agency>
+  <Category i="1" name="cooking">
+    <News id="1" name="fight klychko-joshua" pages="5" author="ivan stoltenberg"/>
+    <News id="2" name="tennis tournament final" pages="67" author="tom garfild"/>
+  </Category>
+  <Category id="2" name="politic">
+    <News id="4" name="impichment" pages="4" author="ronald rixkon"/>
+    <News id="5" name="default in venesuella" pages="23" author="anna kovalenko"/>
+  </Category>
+</Agency>

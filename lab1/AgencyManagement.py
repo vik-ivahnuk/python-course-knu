@@ -2,6 +2,7 @@ from AgencyXML import AgencyXML as axml
 from news.NewsCategory import NewsCategory
 from news.News import News
 
+
 class AgencyManagement:
     def __init__(self, xml_path: str):
         self.__xml_path = xml_path
@@ -63,7 +64,7 @@ class AgencyManagement:
         print("news with this ID were not found")
 
     def print_all_categories(self) -> None:
-        if self.__news_categories is []:
+        if len(self.__news_categories) == 0:
             print("the list of categories is empty")
         for category in self.__news_categories:
             print(category)
@@ -86,14 +87,19 @@ class AgencyManagement:
             print("category with such ID already exists")
 
     def add_news(self, category_id: int, news_id: int, name: str, pages: int, author: str) -> None:
+        category_id_find = False
         if not self.id_in_news(news_id):
             for category in self.__news_categories:
                 if category.id == category_id:
+                    category_id_find = True
                     category.news.append(News(news_id, name, pages, author))
                     axml.save_all(self.__xml_path, self.__news_categories)
                     break
         else:
+            category_id_find = True
             print("news with such ID already exists")
+        if not category_id_find:
+            print("there is no category with this ID")
 
     def upgrade_category(self, category_id: int, new_name: str) -> None:
         if self.id_in_categories(category_id):
@@ -106,19 +112,16 @@ class AgencyManagement:
         else:
             print("category with such ID already exists")
 
-    def upgrade_news(self, news_id: int, new_name: str = None,
-                     new_pages: int = None, new_author: str = None) -> None:
+    def upgrade_news(self, news_id: int, new_name: str ,
+                     new_pages: int, new_author: str) -> None:
         if self.id_in_news(news_id):
             _exit = False
             for category in self.__news_categories:
                 for nw in category.news:
                     if nw.id == news_id:
-                        if not new_name is None:
-                            nw.name = new_name
-                        if not new_pages is None:
-                            nw.pages  = new_pages
-                        if not new_author is None:
-                            nw.author = new_author
+                        nw.name = new_name
+                        nw.pages = new_pages
+                        nw.author = new_author
                         _exit = True
                         axml.save_all(self.__xml_path, self.__news_categories)
                         print("the news upgrade was successful")
@@ -151,8 +154,10 @@ class AgencyManagement:
                 axml.save_all(self.__xml_path, self.__news_categories)
                 print("removal was successful")
                 return None
+
         print("removal failed")
 
     def clear(self):
         self.__news_categories.clear()
         axml.save_all(self.__xml_path, self.__news_categories)
+

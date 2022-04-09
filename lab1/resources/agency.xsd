@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            targetNamespace="http://vik-ivahnuk.com.lab1/agency"
+            xmlns:tns="http://vik-ivahnuk.com.lab1/agency"
+            elementFormDefault="qualified"
+            attributeFormDefault="unqualified">
 
     <xsd:element name="Agency">
         <xsd:complexType>
             <xsd:sequence>
-                <xsd:element name="Category"  minOccurs="0" maxOccurs="unbounded">
+                <xsd:element name="Category" type="tns:Category"  minOccurs="0" maxOccurs="unbounded">
                 </xsd:element>
             </xsd:sequence>
         </xsd:complexType>

@@ -2,15 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a6c48907-e8c7-4a3b-b0eb-9b824118fbba" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/demo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/invalid_xml/agency.dtd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/invalid_xml/invalid1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/invalid_xml/invalid2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/invalid_xml/invalid_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/invalid_xml/invalid_2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AgencyManagement.py" beforeDir="false" afterPath="$PROJECT_DIR$/AgencyManagement.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AgencyXML.py" beforeDir="false" afterPath="$PROJECT_DIR$/AgencyXML.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo.py" beforeDir="false" afterPath="$PROJECT_DIR$/demo.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/news/News.py" beforeDir="false" afterPath="$PROJECT_DIR$/news/News.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/news/NewsCategory.py" beforeDir="false" afterPath="$PROJECT_DIR$/news/NewsCategory.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/agency.xml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/agency.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/agency.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/resources/agency.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xmlvalidator.py" beforeDir="false" afterPath="$PROJECT_DIR$/xml_validator.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,10 +32,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/news/News.py" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/main.py" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/xmlvalidator.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/xml_validator.py" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/resources/agency.xsd" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/AgencyXML.py" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/AgencyManagement.py" root0="FORCE_HIGHLIGHTING" />
@@ -98,7 +111,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="xmlvalidator" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="lab1" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -111,7 +124,29 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="D:\python labs\python-course-knu\lab1\xmlvalidator.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="xml_validator" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="lab1" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="D:\python labs\python-course-knu\lab1\xml_validator.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -122,14 +157,16 @@
     </configuration>
     <list>
       <item itemvalue="Python.main" />
-      <item itemvalue="Python.xmlvalidator" />
       <item itemvalue="Python.NewsCategory" />
+      <item itemvalue="Python.xml_validator" />
+      <item itemvalue="Python.test" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.main" />
+        <item itemvalue="Python.test" />
         <item itemvalue="Python.NewsCategory" />
-        <item itemvalue="Python.xmlvalidator" />
+        <item itemvalue="Python.xml_validator" />
       </list>
     </recent_temporary>
   </component>
@@ -150,7 +187,13 @@
       <workItem from="1649222266323" duration="12750000" />
       <workItem from="1649259492588" duration="10030000" />
       <workItem from="1649308610192" duration="2005000" />
-      <workItem from="1649312249966" duration="26091000" />
+      <workItem from="1649312249966" duration="36535000" />
+      <workItem from="1649355951632" duration="3474000" />
+      <workItem from="1649396166571" duration="8984000" />
+      <workItem from="1649407782573" duration="7194000" />
+      <workItem from="1649423368599" duration="740000" />
+      <workItem from="1649425454452" duration="8049000" />
+      <workItem from="1649484391584" duration="1911000" />
     </task>
     <servers />
   </component>
@@ -170,7 +213,8 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/lab1$NewsCategory.coverage" NAME="NewsCategory Coverage Results" MODIFIED="1649225822049" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/news" />
-    <SUITE FILE_PATH="coverage/lab1$main.coverage" NAME="main Coverage Results" MODIFIED="1649337034300" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/lab1$test.coverage" NAME="test Coverage Results" MODIFIED="1649436285967" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/lab1$main.coverage" NAME="main Coverage Results" MODIFIED="1649486300573" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/lab1$validator.coverage" NAME="validator Coverage Results" MODIFIED="1649084289119" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

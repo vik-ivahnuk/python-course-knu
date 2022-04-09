@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Agency xmlns="http://vik-ivahnuk.com.lab1/agency">
+	<Categor id="1" name="sport"/>
+	<Category id="2" name="politic"/>
+</Agency>

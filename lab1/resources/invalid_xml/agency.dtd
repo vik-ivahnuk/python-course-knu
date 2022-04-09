@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <!ELEMENT Agency (Category)*>
+    <!ELEMENT Category (News)*>
+    <!ATTLIST Category id CDATA #REQUIRED name CDATA #REQUIRED>
+    <!ELEMENT News EMPTY>
+    <!ATTLIST News id CDATA #REQUIRED name CDATA #REQUIRED pages CDATA #REQUIRED author CDATA #REQUIRED>
