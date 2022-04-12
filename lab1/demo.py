@@ -1,6 +1,7 @@
 from AgencyManagement import AgencyManagement as AM
 from xml_validator import validate_by_xsd
 from xml_validator import validate_by_dtd
+import os
 
 
 def demo_test_validators():
@@ -31,6 +32,7 @@ def demo_work_with_xml():
     agency.add_category(3, "financial")
     agency.add_news(3, 6, "tesla motors", 22, "anna kovalenko")
     agency.print_all_categories()
+    os.system('PAUSE')
 
     # test invalid adding
     print("\n\n\n**************** invaild adding news and categories   *******************\n\n\n")
@@ -41,6 +43,7 @@ def demo_work_with_xml():
     agency.add_category(1, "cooking")
     print()
     agency.print_all_categories()
+    os.system('PAUSE')
 
     # test search
     print("\n\n\n******************** search  *********************\n\n\n")
@@ -60,6 +63,7 @@ def demo_work_with_xml():
     print()
     agency.print_all_categories()
     print()
+    os.system('PAUSE')
 
     # removal test
     print("\n\n\n****************  removal  *******************\n\n\n")
@@ -67,12 +71,14 @@ def demo_work_with_xml():
     agency.remove_news(3)
     print()
     agency.print_all_categories()
-    #os.system('PAUSE')
+    os.system('PAUSE')
 
     # test cleaning
     print("\n\n\n****************  cleaning   *******************\n\n\n")
     agency.clear()
     agency.print_all_categories()
+    os.system('PAUSE')
+
 
     # end testing
     print("\n\n\n**************** final   *******************\n\n\n")
