@@ -1,7 +1,7 @@
 import config
 import socket
 import pickle
-import enum
+
 from agency_data_base import AgencyDataBaseManager
 
 class Server:
