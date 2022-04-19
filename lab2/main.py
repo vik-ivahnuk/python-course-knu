@@ -35,7 +35,7 @@ def demo():
     print(" num:", agency.count_news_by_category(10), "\n")
 
     print("\n**************** change ********************\n")
-    print(agency.change_category(3, "name","geo-political"), "\n")
+    print(agency.change_category(3, "name", "geo-political"), "\n")
     print(agency.change_news(4, "num_pages", 99), "\n")
     print("Categories:")
     print_categories(agency.get_all_categories())
