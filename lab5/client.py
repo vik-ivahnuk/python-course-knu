@@ -11,7 +11,7 @@ class Client:
 
     def send_request(self, request):
         self.channel = self.connection.channel()
-        self.channel.basic_consume(queue='from_agency', auto_ack=True, on_message_callback=self.callback)
+        self.channel.basic_consume(queue='from_agency', auto_ack=True, on_message_callback=self.__callback)
         serialize = pickle.dumps(request)
         cor_id = str(uuid.uuid4())
         self.channel.basic_publish(exchange='',
@@ -25,7 +25,7 @@ class Client:
                                    )
         self.channel.start_consuming()
 
-    def callback(self, ch, method, properties, body):
+    def __callback(self, ch, method, properties, body):
         result = pickle.loads(body)
         print_news(result)
         self.channel.close()

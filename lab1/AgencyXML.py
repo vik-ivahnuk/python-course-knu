@@ -14,83 +14,39 @@ class AgencyXML:
 
     @staticmethod
     def get_category_by_id(xml_path: str, search_id: int) -> NewsCategory:
-        if(validate_by_xsd(xml_path, AgencyXML.XSD_PATH)):
-            with parse(xml_path) as dom:
-                dom: Document = dom
-                for category in dom.getElementsByTagName("Category"):
-                    category: Element = category
-                    if category.nodeType == category.ELEMENT_NODE:
-                        if int(category.getAttribute("id")) == search_id:
-                            news: [News] = []
-                            for nw in category.childNodes:
-                                nw: Element = nw
-                                if nw.nodeType == nw.ELEMENT_NODE:
-                                    news.append(
-                                        News(int(nw.getAttribute("id")),
-                                             nw.getAttribute("name"),
-                                             int(nw.getAttribute("pages")),
-                                             nw.getAttribute("author"))
-                                    )
-                            return NewsCategory(
-                                int(category.getAttribute("id")),
-                                category.getAttribute("name"),
-                                news
-                            )
+        validate_by_xsd(xml_path, AgencyXML.XSD_PATH)
+        with parse(xml_path) as dom:
+            dom: Document = dom
+            for category in dom.getElementsByTagName("Category"):
+                category: Element = category
+                if category.nodeType == category.ELEMENT_NODE:
+                    if int(category.getAttribute("id")) == search_id:
+                        news: [News] = []
+                        for nw in category.childNodes:
+                            nw: Element = nw
+                            if nw.nodeType == nw.ELEMENT_NODE:
+                                news.append(
+                                    News(int(nw.getAttribute("id")),
+                                         nw.getAttribute("name"),
+                                         int(nw.getAttribute("pages")),
+                                         nw.getAttribute("author"))
+                                )
+                        return NewsCategory(
+                            int(category.getAttribute("id")),
+                            category.getAttribute("name"),
+                            news
+                        )
         return None
 
     @staticmethod
     def get_news_by_category(xml_path: str, category_id: int) -> [News]:
-        if (validate_by_xsd(xml_path, AgencyXML.XSD_PATH)):
-            with parse(xml_path) as dom:
-                dom: Document = dom
-                for category in dom.getElementsByTagName("Category"):
-                    category: Element = category
-                    if category.nodeType == category.ELEMENT_NODE:
-                        if int(category.getAttribute("id")) == category_id:
-                            news: [News] = []
-                            for nw in category.childNodes:
-                                nw: Element = nw
-                                if nw.nodeType == nw.ELEMENT_NODE:
-                                    news.append(
-                                        News(
-                                             int(nw.getAttribute("id")),
-                                             nw.getAttribute("name"),
-                                             int(nw.getAttribute("pages")),
-                                             nw.getAttribute("author")
-                                        )
-                                    )
-                            return news
-        return []
-
-    @staticmethod
-    def get_new_by_id(xml_path: str, news_id: int) -> News:
-        if(validate_by_xsd(xml_path, AgencyXML.XSD_PATH)):
-            with parse(xml_path) as dom:
-                dom: Document = dom
-                for nw in dom.getElementsByTagName("News"):
-                    nw: Element = nw
-                    if nw.nodeType == nw.ELEMENT_NODE:
-                        if news_id == int(nw.getAttribute("id")):
-                            return News(
-                                int(nw.getAttribute("id")),
-                                nw.getAttribute("name"),
-                                int(nw.getAttribute("pages")),
-                                nw.getAttribute("author")
-                            )
-        return None
-
-
-
-
-    @staticmethod
-    def get_all_categories(xml_path: str) -> [NewsCategory]:
-        result: [NewsCategory] = []
-        if(validate_by_xsd(xml_path, AgencyXML.XSD_PATH)):
-            with parse(xml_path) as dom:
-                dom: Document = dom
-                for category in dom.getElementsByTagName("Category"):
-                    category: Element = category
-                    if category.nodeType == category.ELEMENT_NODE:
+        validate_by_xsd(xml_path, AgencyXML.XSD_PATH)
+        with parse(xml_path) as dom:
+            dom: Document = dom
+            for category in dom.getElementsByTagName("Category"):
+                category: Element = category
+                if category.nodeType == category.ELEMENT_NODE:
+                    if int(category.getAttribute("id")) == category_id:
                         news: [News] = []
                         for nw in category.childNodes:
                             nw: Element = nw
@@ -103,13 +59,57 @@ class AgencyXML:
                                          nw.getAttribute("author")
                                     )
                                 )
-                        result.append(
-                            NewsCategory(
-                                     int(category.getAttribute("id")),
-                                     category.getAttribute("name"),
-                                     news
-                            )
+                        return news
+        return []
+
+    @staticmethod
+    def get_new_by_id(xml_path: str, news_id: int) -> News:
+        validate_by_xsd(xml_path, AgencyXML.XSD_PATH)
+        with parse(xml_path) as dom:
+            dom: Document = dom
+            for nw in dom.getElementsByTagName("News"):
+                nw: Element = nw
+                if nw.nodeType == nw.ELEMENT_NODE:
+                    if news_id == int(nw.getAttribute("id")):
+                        return News(
+                            int(nw.getAttribute("id")),
+                            nw.getAttribute("name"),
+                            int(nw.getAttribute("pages")),
+                            nw.getAttribute("author")
                         )
+        return None
+
+
+
+
+    @staticmethod
+    def get_all_categories(xml_path: str) -> [NewsCategory]:
+        result: [NewsCategory] = []
+        validate_by_xsd(xml_path, AgencyXML.XSD_PATH)
+        with parse(xml_path) as dom:
+            dom: Document = dom
+            for category in dom.getElementsByTagName("Category"):
+                category: Element = category
+                if category.nodeType == category.ELEMENT_NODE:
+                    news: [News] = []
+                    for nw in category.childNodes:
+                        nw: Element = nw
+                        if nw.nodeType == nw.ELEMENT_NODE:
+                            news.append(
+                                News(
+                                     int(nw.getAttribute("id")),
+                                     nw.getAttribute("name"),
+                                     int(nw.getAttribute("pages")),
+                                     nw.getAttribute("author")
+                                )
+                            )
+                    result.append(
+                        NewsCategory(
+                                 int(category.getAttribute("id")),
+                                 category.getAttribute("name"),
+                                 news
+                        )
+                    )
 
         return result
 
