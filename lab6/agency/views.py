@@ -1,7 +1,7 @@
 
 from django.http import HttpResponse
-from data_base.agency_data_base import AgencyDataBaseManager
-import data_base.config as config
+from agency.data_base.agency_data_base import AgencyDataBaseManager
+import agency.data_base.config as config
 
 styles = """
 <style>
@@ -18,7 +18,7 @@ styles = """
         width: 100%;
     }
     thead tr {
-        background-color: aquamarine;
+        background-color: #ffc0cb;
     }
     td, th {
         border: 1px solid #dddddd;
@@ -39,7 +39,7 @@ def category_to_html(category_id: int, name: str):
     <tr>
         <td>%s</td>
         <td>%s</td>
-        <td><a href="categories/%s">%s</a></td>
+        <td><a href="news/%s">%s</a></td>
     </tr>""" % (category_id, name, category_id, name)
 
 
@@ -55,7 +55,7 @@ def news_to_html(news_id: int, category_id: int, name: str, pages: int, author: 
 
 
 def categories(request):
-    categories = manager.get_all_categories()
+    _categories = manager.get_all_categories()
     return HttpResponse("""
     <!DOCTYPE html>
     <html lang="en">
@@ -71,7 +71,7 @@ def categories(request):
                 <tr>
                     <th>Category id</th>
                     <th>Name</th>
-                    <th>Link to albums<th>
+                    <th>News in this category<th>
                 </tr>
             </thead>
             <tbody>
@@ -80,11 +80,11 @@ def categories(request):
         </table>
     </body>
     </html>
-""" % (styles, ''.join([category_to_html(category[0], category[1]) for category in categories])))
+    """ % (styles, ''.join([category_to_html(category[0], category[1]) for category in _categories])))
 
 
 def news(request, category_id):
-    _news = manager.get_news_by_parameter("category_id", category_id)
+    _news = manager.get_news_by_parameter("category", category_id)
     return HttpResponse("""
     <!DOCTYPE html>
     <html lang="en">
