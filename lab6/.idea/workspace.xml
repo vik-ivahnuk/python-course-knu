@@ -2,23 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b117921e-2379-45bb-a708-a16937d51117" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/lab6.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/agency/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/agency/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/agency/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/agency/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/agency/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/agency/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/agency/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agency/data_base/agency_data_base.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agency/data_base/config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agency/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agency/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/agency/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab6/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab6/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab6/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab6/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -48,6 +50,7 @@
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="lab6.settings" />
       </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="" />
@@ -75,6 +78,8 @@
       <option name="presentableId" value="Default" />
       <updated>1651425197582</updated>
       <workItem from="1651425201847" duration="2271000" />
+      <workItem from="1651484409117" duration="434000" />
+      <workItem from="1651644900378" duration="5850000" />
     </task>
     <servers />
   </component>
