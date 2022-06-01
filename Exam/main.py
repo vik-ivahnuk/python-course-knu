@@ -47,6 +47,15 @@ class Manager:
     def sort_by_price(self):
         self.concerts.sort(key=lambda x: x.price)
 
+    def sort_by_data(self):
+        self.concerts.sort(key=lambda x: x.data)
+
+    def sort_by_genre(self):
+        self.concerts.sort(key=lambda x: x.genre)
+
+    def sort_by_authors(self):
+        self.concerts.sort(key=lambda x: x.authors)
+
     def get_concert_by_genre(self, genre):
         res = list()
         for a in self.concerts:
